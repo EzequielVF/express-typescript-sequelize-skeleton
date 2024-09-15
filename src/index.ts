@@ -21,7 +21,7 @@ app.use(express.json());
 
 
 app.get("/", (_req, res) => {
-  res.send("ExpressCORRIENDO");
+  res.status(200).send("ExpressCORRIENDO");
 });
 
 const start = async (): Promise<void> => {
